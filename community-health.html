@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>社区健康科普 — 康养云·智慧康复互联平台</title>
+<meta name="description" content="以社区为阵地，通过健康讲座、公益筛查与康复志愿服务，把专业的健康知识送到居民身边。">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('k-js');</script>
+</head>
+<body>
+
+<!-- ==================== 顶部导航栏 ==================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="康养云·智慧康复互联平台 首页">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="kBrandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1B5E9E"/>
+            <stop offset="1" stop-color="#1F8A5F"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="44" height="44" rx="14" fill="url(#kBrandGrad)"/>
+        <path d="M9 27h8l4.5-11 6.5 18 5-13h6" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="37" cy="13" r="3" fill="#F5B37C"/>
+      </svg>
+      <span class="brand-text">
+        <strong>康养云</strong>
+        <small>智慧康复互联平台</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="index.html#advantages">关于我们</a>
+      <a href="index.html#services">核心服务</a>
+      <a href="index.html#audience">适用人群</a>
+      <a href="index.html#partners">合作机构</a>
+      <a href="index.html#booking">联系我们</a>
+      <button class="nav-login-mobile" type="button" data-login="admin">管理员登录</button>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-tel" href="tel:18800000000">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>188-XXXX-XXXX</span>
+      </a>
+      <button class="btn-header-ghost" type="button" data-login="admin">管理员登录</button>
+      <button class="btn-header-solid" type="button" data-login="user">用户登录</button>
+      <button class="nav-toggle" type="button" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ==================== 服务 Hero ==================== -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="面包屑导航">
+      <a href="index.html">首页</a>
+      <span class="sep">/</span>
+      <a href="index.html#services">核心服务</a>
+      <span class="sep">/</span>
+      <span class="current">社区健康科普</span>
+    </nav>
+    <h1>社区健康科普</h1>
+    <p class="lead">以社区为阵地，通过健康讲座、公益筛查与康复志愿服务，把专业的健康知识送到居民身边。</p>
+    <ul class="hero-tags">
+      <li>健康讲座</li>
+      <li>公益筛查</li>
+      <li>志愿服务</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="btn-primary" href="index.html?service=社区健康科普#booking">
+        预约该服务
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn-secondary" href="index.html#services">返回全部服务</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 核心特色 ==================== -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">核心特色</p>
+      <h2 class="section-title">健康知识，送到居民身边</h2>
+      <p class="section-desc">让专业康复知识走出机构，融入社区日常。</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon adv-icon-blue">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>社区健康讲座</h3>
+        <p>康复医师与营养师走进社区，围绕慢病管理、科学运动、合理膳食开展系列讲座。</p>
+      </article>
+
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon adv-icon-green">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>公益筛查活动</h3>
+        <p>定期开展体态、血压、步态等公益筛查，帮助居民早发现、早干预健康隐患。</p>
+      </article>
+
+      <article class="feature-card" data-reveal>
+        <div class="feature-icon adv-icon-orange">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>康复志愿服务</h3>
+        <p>组建康复志愿者队伍，为居民提供陪练、随访与转介服务，让关爱持续在线。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 服务流程 ==================== -->
+<section class="section section-alt" id="process">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">服务流程</p>
+      <h2 class="section-title">从需求调研到效果回访</h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step-item" data-reveal>
+        <span class="step-num">01</span>
+        <h3>需求调研</h3>
+        <p>收集社区居民的健康关切，确定活动主题与形式。</p>
+      </li>
+      <li class="step-item" data-reveal>
+        <span class="step-num">02</span>
+        <h3>活动策划</h3>
+        <p>联合社区策划讲座、筛查与志愿服务的活动排期。</p>
+      </li>
+      <li class="step-item" data-reveal>
+        <span class="step-num">03</span>
+        <h3>落地开展</h3>
+        <p>专业团队进社区执行活动，现场答疑与筛查建档。</p>
+      </li>
+      <li class="step-item" data-reveal>
+        <span class="step-num">04</span>
+        <h3>效果回访</h3>
+        <p>回访参与居民，跟踪健康改善情况并调整后续活动。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ==================== 适用人群 ==================== -->
+<section class="section" id="audience">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">适用人群</p>
+      <h2 class="section-title">面向社区的每一个你</h2>
+      <p class="section-desc">欢迎社区居委会、物业与社团组织联合举办公益活动。</p>
+    </div>
+    <ul class="audience-tags" data-reveal>
+      <li>社区居民</li>
+      <li>慢病群体</li>
+      <li>老年社团</li>
+      <li>社区工作者</li>
+      <li>志愿者团队</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================== 预约 CTA ==================== -->
+<section class="section" id="cta">
+  <div class="container">
+    <div class="cta-band" data-reveal>
+      <div>
+        <h2>把健康科普带进您所在的社区</h2>
+        <p>提交预约后，社区服务团队将与您沟通活动合作事宜。</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn-light" href="index.html?service=社区健康科普#booking">立即预约该服务</a>
+        <a class="btn-outline-light" href="tel:18800000000">电话咨询 188-XXXX-XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== Footer ==================== -->
+<footer class="site-footer" id="partners">
+  <div class="container footer-inner">
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="2" y="2" width="44" height="44" rx="14" fill="none" stroke="currentColor" stroke-width="2.4" opacity=".7"/>
+          <path d="M9 27h8l4.5-11 6.5 18 5-13h6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>康养云</span>
+      </div>
+      <p class="footer-slogan">智慧康复互联平台<br>融合黎药特色与AI科技的全人群康复服务</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>友情链接</h3>
+      <ul class="footer-links">
+        <li><a href="#">相关医疗机构</a></li>
+        <li><a href="#">黎药研发中心</a></li>
+        <li><a href="#">合作高校</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>联系我们</h3>
+      <ul class="footer-links footer-contact">
+        <li>电话：188-XXXX-XXXX</li>
+        <li>邮箱：service@example.com</li>
+        <li>地址：XX省XX市XX路XX号</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 康养云·智慧康复互联平台 版权所有</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ==================== 登录弹窗 ==================== -->
+<div class="modal" id="loginModal" hidden>
+  <div class="modal-mask" data-close-modal></div>
+
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="loginModalTitle">
+    <button class="modal-close" type="button" data-close-modal aria-label="关闭登录弹窗">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+
+    <div id="loginFormPanel">
+      <h3 class="modal-title" id="loginModalTitle">用户登录</h3>
+      <p class="modal-sub" id="loginModalSub">登录后可查看您的康复记录与预约进度</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginAccount" id="loginAccountLabel">手机号</label>
+          <input type="text" id="loginAccount" name="account" autocomplete="username" placeholder="请输入手机号">
+          <p class="field-error" id="loginAccountError" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="loginPassword">密码</label>
+          <input type="password" id="loginPassword" name="password" autocomplete="current-password" placeholder="请输入密码">
+          <p class="field-error" id="loginPasswordError" role="alert"></p>
+        </div>
+        <button class="btn-submit" type="submit" id="loginSubmit">登 录</button>
+      </form>
+    </div>
+
+    <div class="form-success login-success" id="loginSuccess" hidden>
+      <svg class="success-icon" viewBox="0 0 96 96" aria-hidden="true">
+        <circle class="success-ring" cx="48" cy="48" r="42" fill="none"/>
+        <path class="success-check" d="M30 50l12 12 24-26" fill="none"/>
+      </svg>
+      <h3>登录成功</h3>
+      <p class="success-desc" id="loginSuccessDesc">欢迎回来，正在为您进入系统…</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
