@@ -805,6 +805,30 @@ body.no-scroll { overflow: hidden; }
 }
 .btn-outline-light:hover { border-color: #fff; background: rgba(255, 255, 255, .08); }
 
+/* ==================== 页面切换过渡（View Transitions） ==================== */
+@view-transition {
+  navigation: auto;
+}
+
+/* 导航栏与页脚在跳转间保持稳定，仅内容区参与过渡 */
+.site-header { view-transition-name: site-header; }
+.site-footer { view-transition-name: site-footer; }
+
+::view-transition-old(site-header),
+::view-transition-new(site-header),
+::view-transition-old(site-footer),
+::view-transition-new(site-footer) { animation: none; }
+
+::view-transition-old(root) { animation: kPageOut .3s ease both; }
+::view-transition-new(root) { animation: kPageIn .45s cubic-bezier(.22, .61, .36, 1) both; }
+
+@keyframes kPageOut {
+  to { opacity: 0; transform: translateY(-12px); }
+}
+@keyframes kPageIn {
+  from { opacity: 0; transform: translateY(16px); }
+}
+
 /* ==================== 滚动渐入 ==================== */
 .k-js [data-reveal] { opacity: 0; }
 
@@ -898,4 +922,5 @@ body.no-scroll { overflow: hidden; }
   .ring-dashed, .dot-float { animation: none; }
   .success-ring, .success-check { animation-duration: .01s; }
   .modal-mask, .modal-card { animation: none; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
 }
